@@ -10,16 +10,13 @@ public class MovementUpdated : MonoBehaviour
     private Vector2 PlayerPosition;
     public Animator playerAni;
 
-
-   
-    // Start is called before the first frame update
     void Start()
     {
         MoveSpeed = 2.0f;
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         HorizontalMovement = Input.GetAxisRaw("Horizontal");
